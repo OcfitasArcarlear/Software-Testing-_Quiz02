@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.1 on win32)" generated="2026-02-09T15:11:13.410700" rpa="false" schemaversion="5">
+<suite id="s1" name="testRF02" source="D:\Software-Testing-_Quiz02\testRF02.robot">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2026-02-09T15:11:14.072400" level="INFO">Opening browser 'Chrome' to base url 'https://access.line.me/oauth2/v2.1/login?returnUri=%2Foauth2%2Fv2.1%2Fauthorize%2Fconsent%3Fresponse_type%3Dcode%26client_id%3D2005931231%26redirect_uri%3Dhttps%253A%252F%252Fchiangmuan.igovapp.com%252Fapi%252Fmethod%252Figovapp.api.line_login%26state%3DeyJzaXRlIjoiaHR0cHM6Ly9jaGlhbmdtdWFuLmlnb3ZhcHAuY29tIiwidG9rZW4iOiI5YzQyNDJhZGMzNGRkM2NjZDM3NDg1MWVhMmIzYzk1YWZlN2EzMWE0MDM1M2Y3NGNjYWM5Y2U2ODkzMGI5OTBkIiwicmVkaXJlY3RfdG8iOm51bGx9%26scope%3Dprofile%2520openid%2520email%26bot_prompt%3Daggressive&amp;loginChannelId=2005931231&amp;loginState=iaJQpa4rumu4n5YwG3rlnK#/'.</msg>
+<arg>https://access.line.me/oauth2/v2.1/login?returnUri=%2Foauth2%2Fv2.1%2Fauthorize%2Fconsent%3Fresponse_type%3Dcode%26client_id%3D2005931231%26redirect_uri%3Dhttps%253A%252F%252Fchiangmuan.igovapp.com%252Fapi%252Fmethod%252Figovapp.api.line_login%26state%3DeyJzaXRlIjoiaHR0cHM6Ly9jaGlhbmdtdWFuLmlnb3ZhcHAuY29tIiwidG9rZW4iOiI5YzQyNDJhZGMzNGRkM2NjZDM3NDg1MWVhMmIzYzk1YWZlN2EzMWE0MDM1M2Y3NGNjYWM5Y2U2ODkzMGI5OTBkIiwicmVkaXJlY3RfdG8iOm51bGx9%26scope%3Dprofile%2520openid%2520email%26bot_prompt%3Daggressive&amp;loginChannelId=2005931231&amp;loginState=iaJQpa4rumu4n5YwG3rlnK#/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-09T15:11:14.071761" elapsed="4.996695"/>
+</kw>
+<test id="s1-t1" name="RF02-Verify that user can input email in the email field" line="34">
+<kw name="click Element email">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T15:11:19.073638" level="INFO">Clicking element '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[1]'.</msg>
+<arg>//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T15:11:19.072463" elapsed="0.260341"/>
+</kw>
+<status status="PASS" start="2026-02-09T15:11:19.071506" elapsed="0.261673"/>
+</kw>
+<kw name="input Email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-09T15:11:19.335236" level="INFO">Typing text 'dragonearth5566@gmail.com' into text field '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[1]/input'.</msg>
+<arg>//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[1]/input</arg>
+<arg>dragonearth5566@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T15:11:19.334833" elapsed="0.261954"/>
+</kw>
+<status status="PASS" start="2026-02-09T15:11:19.334186" elapsed="0.262956"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-09T15:11:21.599694" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-09T15:11:19.597848" elapsed="2.002031"/>
+</kw>
+<kw name="Click Element password">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T15:11:21.601349" level="INFO">Clicking element '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[2]'.</msg>
+<arg>//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T15:11:21.601068" elapsed="0.101835"/>
+</kw>
+<status status="PASS" start="2026-02-09T15:11:21.600532" elapsed="0.102582"/>
+</kw>
+<kw name="Input Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-09T15:11:21.704996" level="INFO">Typing text 'Dragonworld5566' into text field '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[2]/input'.</msg>
+<arg>//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[2]/input</arg>
+<arg>Dragonworld5566</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T15:11:21.704528" elapsed="0.140745"/>
+</kw>
+<status status="PASS" start="2026-02-09T15:11:21.703835" elapsed="0.141688"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-09T15:11:23.847453" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-09T15:11:21.846125" elapsed="2.001548"/>
+</kw>
+<kw name="click Element login button">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T15:11:23.849434" level="INFO">Clicking element '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[3]/button'.</msg>
+<arg>//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[3]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-09T15:11:23.848963" elapsed="0.104252"/>
+</kw>
+<status status="PASS" start="2026-02-09T15:11:23.848309" elapsed="0.105444"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-09T15:11:33.956597" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-09T15:11:23.954730" elapsed="10.002053"/>
+</kw>
+<status status="PASS" start="2026-02-09T15:11:19.069599" elapsed="14.887705"/>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-09T15:11:33.958690" elapsed="2.352999"/>
+</kw>
+<status status="PASS" start="2026-02-09T15:11:13.413392" elapsed="22.898418"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="testRF02" id="s1" pass="1" fail="0" skip="0">testRF02</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
