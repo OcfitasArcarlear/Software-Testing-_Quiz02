@@ -1,95 +1,199 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.13.1 on win32)" generated="2026-02-09T15:11:13.410700" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.13.1 on win32)" generated="2026-02-09T15:33:43.787812" rpa="false" schemaversion="5">
 <suite id="s1" name="testRF02" source="D:\Software-Testing-_Quiz02\testRF02.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2026-02-09T15:11:14.072400" level="INFO">Opening browser 'Chrome' to base url 'https://access.line.me/oauth2/v2.1/login?returnUri=%2Foauth2%2Fv2.1%2Fauthorize%2Fconsent%3Fresponse_type%3Dcode%26client_id%3D2005931231%26redirect_uri%3Dhttps%253A%252F%252Fchiangmuan.igovapp.com%252Fapi%252Fmethod%252Figovapp.api.line_login%26state%3DeyJzaXRlIjoiaHR0cHM6Ly9jaGlhbmdtdWFuLmlnb3ZhcHAuY29tIiwidG9rZW4iOiI5YzQyNDJhZGMzNGRkM2NjZDM3NDg1MWVhMmIzYzk1YWZlN2EzMWE0MDM1M2Y3NGNjYWM5Y2U2ODkzMGI5OTBkIiwicmVkaXJlY3RfdG8iOm51bGx9%26scope%3Dprofile%2520openid%2520email%26bot_prompt%3Daggressive&amp;loginChannelId=2005931231&amp;loginState=iaJQpa4rumu4n5YwG3rlnK#/'.</msg>
+<msg time="2026-02-09T15:33:44.324786" level="INFO">Opening browser 'Chrome' to base url 'https://access.line.me/oauth2/v2.1/login?returnUri=%2Foauth2%2Fv2.1%2Fauthorize%2Fconsent%3Fresponse_type%3Dcode%26client_id%3D2005931231%26redirect_uri%3Dhttps%253A%252F%252Fchiangmuan.igovapp.com%252Fapi%252Fmethod%252Figovapp.api.line_login%26state%3DeyJzaXRlIjoiaHR0cHM6Ly9jaGlhbmdtdWFuLmlnb3ZhcHAuY29tIiwidG9rZW4iOiI5YzQyNDJhZGMzNGRkM2NjZDM3NDg1MWVhMmIzYzk1YWZlN2EzMWE0MDM1M2Y3NGNjYWM5Y2U2ODkzMGI5OTBkIiwicmVkaXJlY3RfdG8iOm51bGx9%26scope%3Dprofile%2520openid%2520email%26bot_prompt%3Daggressive&amp;loginChannelId=2005931231&amp;loginState=iaJQpa4rumu4n5YwG3rlnK#/'.</msg>
 <arg>https://access.line.me/oauth2/v2.1/login?returnUri=%2Foauth2%2Fv2.1%2Fauthorize%2Fconsent%3Fresponse_type%3Dcode%26client_id%3D2005931231%26redirect_uri%3Dhttps%253A%252F%252Fchiangmuan.igovapp.com%252Fapi%252Fmethod%252Figovapp.api.line_login%26state%3DeyJzaXRlIjoiaHR0cHM6Ly9jaGlhbmdtdWFuLmlnb3ZhcHAuY29tIiwidG9rZW4iOiI5YzQyNDJhZGMzNGRkM2NjZDM3NDg1MWVhMmIzYzk1YWZlN2EzMWE0MDM1M2Y3NGNjYWM5Y2U2ODkzMGI5OTBkIiwicmVkaXJlY3RfdG8iOm51bGx9%26scope%3Dprofile%2520openid%2520email%26bot_prompt%3Daggressive&amp;loginChannelId=2005931231&amp;loginState=iaJQpa4rumu4n5YwG3rlnK#/</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-02-09T15:11:14.071761" elapsed="4.996695"/>
+<status status="PASS" start="2026-02-09T15:33:44.324303" elapsed="4.134811"/>
 </kw>
-<test id="s1-t1" name="RF02-Verify that user can input email in the email field" line="34">
+<test id="s1-t1" name="RF02-Verify that user can input email in the email field" line="69">
 <kw name="click Element email">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-02-09T15:11:19.073638" level="INFO">Clicking element '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[1]'.</msg>
+<msg time="2026-02-09T15:33:48.462899" level="INFO">Clicking element '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[1]'.</msg>
 <arg>//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-09T15:11:19.072463" elapsed="0.260341"/>
+<status status="PASS" start="2026-02-09T15:33:48.462082" elapsed="0.163879"/>
 </kw>
-<status status="PASS" start="2026-02-09T15:11:19.071506" elapsed="0.261673"/>
+<status status="PASS" start="2026-02-09T15:33:48.461275" elapsed="0.164898"/>
 </kw>
 <kw name="input Email">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-09T15:11:19.335236" level="INFO">Typing text 'dragonearth5566@gmail.com' into text field '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[1]/input'.</msg>
+<msg time="2026-02-09T15:33:48.628394" level="INFO">Typing text 'dragonearth5566@gmail.com' into text field '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[1]/input'.</msg>
 <arg>//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[1]/input</arg>
 <arg>dragonearth5566@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-09T15:11:19.334833" elapsed="0.261954"/>
+<status status="PASS" start="2026-02-09T15:33:48.627810" elapsed="0.272699"/>
 </kw>
-<status status="PASS" start="2026-02-09T15:11:19.334186" elapsed="0.262956"/>
+<status status="PASS" start="2026-02-09T15:33:48.626902" elapsed="0.273868"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-02-09T15:11:21.599694" level="INFO">Slept 2 seconds.</msg>
+<msg time="2026-02-09T15:33:50.902302" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-02-09T15:11:19.597848" elapsed="2.002031"/>
+<status status="PASS" start="2026-02-09T15:33:48.901235" elapsed="2.001349"/>
 </kw>
 <kw name="Click Element password">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-02-09T15:11:21.601349" level="INFO">Clicking element '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[2]'.</msg>
+<msg time="2026-02-09T15:33:50.904155" level="INFO">Clicking element '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[2]'.</msg>
 <arg>//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-09T15:11:21.601068" elapsed="0.101835"/>
+<status status="PASS" start="2026-02-09T15:33:50.903835" elapsed="0.089695"/>
 </kw>
-<status status="PASS" start="2026-02-09T15:11:21.600532" elapsed="0.102582"/>
+<status status="PASS" start="2026-02-09T15:33:50.903330" elapsed="0.090569"/>
 </kw>
 <kw name="Input Password">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-09T15:11:21.704996" level="INFO">Typing text 'Dragonworld5566' into text field '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[2]/input'.</msg>
+<msg time="2026-02-09T15:33:50.996097" level="INFO">Typing text 'Dragonworld5566' into text field '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[2]/input'.</msg>
 <arg>//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[2]/input</arg>
 <arg>Dragonworld5566</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-09T15:11:21.704528" elapsed="0.140745"/>
+<status status="PASS" start="2026-02-09T15:33:50.995590" elapsed="0.116809"/>
 </kw>
-<status status="PASS" start="2026-02-09T15:11:21.703835" elapsed="0.141688"/>
+<status status="PASS" start="2026-02-09T15:33:50.994892" elapsed="0.117652"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-02-09T15:11:23.847453" level="INFO">Slept 2 seconds.</msg>
+<msg time="2026-02-09T15:33:53.113936" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-02-09T15:11:21.846125" elapsed="2.001548"/>
+<status status="PASS" start="2026-02-09T15:33:51.112896" elapsed="2.001277"/>
 </kw>
 <kw name="click Element login button">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-02-09T15:11:23.849434" level="INFO">Clicking element '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[3]/button'.</msg>
+<msg time="2026-02-09T15:33:53.115764" level="INFO">Clicking element '//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[3]/button'.</msg>
 <arg>//*[@id="app"]/div/div/div/div[2]/div/form/fieldset/div[3]/button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-09T15:11:23.848963" elapsed="0.104252"/>
+<status status="PASS" start="2026-02-09T15:33:53.115373" elapsed="0.100915"/>
 </kw>
-<status status="PASS" start="2026-02-09T15:11:23.848309" elapsed="0.105444"/>
+<status status="PASS" start="2026-02-09T15:33:53.114756" elapsed="0.101769"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-02-09T15:11:33.956597" level="INFO">Slept 10 seconds.</msg>
+<msg time="2026-02-09T15:34:03.219418" level="INFO">Slept 10 seconds.</msg>
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-02-09T15:11:23.954730" elapsed="10.002053"/>
+<status status="PASS" start="2026-02-09T15:33:53.217399" elapsed="10.002250"/>
 </kw>
-<status status="PASS" start="2026-02-09T15:11:19.069599" elapsed="14.887705"/>
+<kw name="click Element ฐานข้อมูล">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-09T15:34:03.221993" level="INFO">Clicking element '//*[@id="root"]/div/main/section/div[3]/div[2]/div/div/a[1]'.</msg>
+<msg time="2026-02-09T15:34:03.360909" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-09T15:34:03.361224" level="FAIL">Element with locator '//*[@id="root"]/div/main/section/div[3]/div[2]/div/div/a[1]' not found.</msg>
+<arg>//*[@id="root"]/div/main/section/div[3]/div[2]/div/div/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-09T15:34:03.221110" elapsed="0.145861">Element with locator '//*[@id="root"]/div/main/section/div[3]/div[2]/div/div/a[1]' not found.</status>
+</kw>
+<status status="FAIL" start="2026-02-09T15:34:03.220411" elapsed="0.146807">Element with locator '//*[@id="root"]/div/main/section/div[3]/div[2]/div/div/a[1]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:34:03.367915" elapsed="0.000134"/>
+</kw>
+<kw name="Click Element ประวัติการเตรวจสุขภาพ">
+<status status="NOT RUN" start="2026-02-09T15:34:03.368848" elapsed="0.000135"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:34:03.369423" elapsed="0.000080"/>
+</kw>
+<kw name="Click Element ตรวจ">
+<status status="NOT RUN" start="2026-02-09T15:34:03.369861" elapsed="0.000059"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:34:03.370183" elapsed="0.000038"/>
+</kw>
+<kw name="Click Element ประเมิน">
+<status status="NOT RUN" start="2026-02-09T15:34:03.370483" elapsed="0.000034"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:34:03.370707" elapsed="0.000033"/>
+</kw>
+<kw name="Click Element ตอบแบบสอบถามข้อ1">
+<status status="NOT RUN" start="2026-02-09T15:34:03.370958" elapsed="0.000031"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:34:03.371322" elapsed="0.000030"/>
+</kw>
+<kw name="click Element ตอบแบบสอบถามข้อ2">
+<status status="NOT RUN" start="2026-02-09T15:34:03.371736" elapsed="0.000035"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:34:03.371971" elapsed="0.000031"/>
+</kw>
+<kw name="Click Element ตอบแบบสอบถามข้อ3">
+<status status="NOT RUN" start="2026-02-09T15:34:03.372209" elapsed="0.000031"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:34:03.372409" elapsed="0.000029"/>
+</kw>
+<kw name="Click Element ตอบแบบสอบถามข้อ4">
+<status status="NOT RUN" start="2026-02-09T15:34:03.372636" elapsed="0.000030"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:34:03.372835" elapsed="0.000029"/>
+</kw>
+<kw name="Click Element ตอบแบบสอบถามข้อ5">
+<status status="NOT RUN" start="2026-02-09T15:34:03.373062" elapsed="0.000029"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:34:03.373388" elapsed="0.000030"/>
+</kw>
+<kw name="Click Element ตอบแบบสอบถามข้อ6">
+<status status="NOT RUN" start="2026-02-09T15:34:03.373622" elapsed="0.000029"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:34:03.373835" elapsed="0.000029"/>
+</kw>
+<kw name="Click Element ตอบแบบสอบถามข้อ7">
+<status status="NOT RUN" start="2026-02-09T15:34:03.374129" elapsed="0.000049"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:34:03.374410" elapsed="0.000034"/>
+</kw>
+<kw name="Click Element ส่งแบบประเมิน">
+<status status="NOT RUN" start="2026-02-09T15:34:03.374698" elapsed="0.000034"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-02-09T15:34:03.374972" elapsed="0.000051"/>
+</kw>
+<status status="FAIL" start="2026-02-09T15:33:48.459746" elapsed="14.915676">Element with locator '//*[@id="root"]/div/main/section/div[3]/div[2]/div/div/a[1]' not found.</status>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-02-09T15:11:33.958690" elapsed="2.352999"/>
+<status status="PASS" start="2026-02-09T15:34:03.376850" elapsed="2.429434"/>
 </kw>
-<status status="PASS" start="2026-02-09T15:11:13.413392" elapsed="22.898418"/>
+<status status="FAIL" start="2026-02-09T15:33:43.790470" elapsed="22.016055"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="testRF02" id="s1" pass="1" fail="0" skip="0">testRF02</stat>
+<stat name="testRF02" id="s1" pass="0" fail="1" skip="0">testRF02</stat>
 </suite>
 </statistics>
 <errors>
